@@ -38,9 +38,10 @@ docker run --rm -it --gpus all \
 
 Создайте папки для работы и выполните команду:
 
-```powershell
 В одной директории создать папки audio, output, cache"
 В audio исходные файлы
+
+```powershell
 docker run --rm -it --gpus all `
   -v .\audio:/app/audio `
   -v .\output:/app/output `
