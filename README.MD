@@ -49,9 +49,9 @@ docker run --rm -it --gpus all `
   velkorra/whisper-app:latest `
   ./audio/audio.m4a --model_size large-v3 --language ru --output_file /app/output/audio_transcibed.txt
 ```
-*   Положите аудиофайл в `C:\whisper\audio`.
-*   Результат появится в `C:\whisper\output`.
-*   Модели скачаются в `C:\whisper\cache`.
+*   Положите аудиофайл в `audio`.
+*   Результат появится в `output`.
+*   Модели скачаются в `cache`.
 
 ## 🔧 Альтернатива: Локальная установка (для разработки)
 
