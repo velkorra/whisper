@@ -39,17 +39,14 @@ docker run --rm -it --gpus all \
 Создайте папки для работы и выполните команду:
 
 ```powershell
-# Создаем папки (например, на диске C)
-New-Item -ItemType Directory -Force -Path "C:\whisper\audio"
-New-Item -ItemType Directory -Force -Path "C:\whisper\output"
-New-Item -ItemType Directory -Force -Path "C:\whisper\cache"
-
+В одной директории создать папки audio, output, cache"
+В audio исходные файлы
 docker run --rm -it --gpus all `
-  -v C:\whisper\audio:/app/audio `
-  -v C:\whisper\output:/app/output `
-  -v C:\whisper\cache:/root/.cache/huggingface `
+  -v .\audio:/app/audio `
+  -v .\output:/app/output `
+  -v .\cache:/root/.cache/huggingface `
   velkorra/whisper-app:latest `
-  ./audio/твой_файл.m4a --model_size large-v3 --language ru --output_file /app/output/результат.txt
+  ./audio/audio.m4a --model_size large-v3 --language ru --output_file /app/output/audio_transcibed.txt
 ```
 *   Положите аудиофайл в `C:\whisper\audio`.
 *   Результат появится в `C:\whisper\output`.
