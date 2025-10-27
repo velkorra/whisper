@@ -10,7 +10,7 @@
 
 1.  **Актуальные драйверы NVIDIA**.
 2.  **Установленный Docker**.
-3.  **[NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)** — позволяет Docker "видеть" вашу видеокарту. **Без этого `--gpus all` не сработает.**
+3.  [Для Linux, в Windows встроено в WSL2]**[NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html)** — позволяет Docker "видеть" вашу видеокарту. **Без этого `--gpus all` не сработает.**
 
 ### Запуск
 
